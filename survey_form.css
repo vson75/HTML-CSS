@@ -1,0 +1,88 @@
+
+body{
+    background-image: linear-gradient(115deg, rgba(206, 155, 242, 0.605), rgba(107, 70, 130, 0.721)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    color: white;
+}
+
+.input{
+    margin-top: 0.5em;
+    border-radius: 4px;
+    border: none;
+    height: 1.75em;
+    border: 1px solid #ced4da;
+    color: rgba(43, 43, 40, 0.769);
+}
+
+.input:focus{
+
+    border-color: #80bdff;
+    box-shadow: 0 0 0 1px #476b93;
+    outline: none;
+}
+
+textarea{
+
+    border-radius: 2px;
+    margin-top: 0.5em;
+    border: 1px solid #ced4da;
+    color: rgba(43, 43, 40, 0.769);
+}
+
+textarea:focus{
+    border-color: #80bdff;
+    box-shadow: 0 0 0 1px #476b93;
+    outline: none;
+}
+
+#title{
+    text-align: center;
+    padding: 20px;
+}
+
+#section_form{
+    width: 100%;
+    background-color: rgba(88, 88, 220, 0.721);
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+
+#survey-form{
+    padding-top: 1rem;
+}
+
+.form_groupe {
+    margin: 0 auto 0.5rem auto;
+    padding: 0.5em 2.5em 0.5em 2.5em;
+    display: grid;
+}
+
+.btn{
+    background-color: #37af65;
+    color: white;
+    margin: 0 auto 0.5rem auto;
+    padding: 0.75rem;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+@media (max-width: 450px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #section_form {
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 450px){
+    #section_form {
+        margin: 0 auto 5px auto;
+        max-width: 450px;
+    }
+
+}
