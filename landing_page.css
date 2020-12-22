@@ -1,0 +1,159 @@
+body{
+    color: black;
+    background-color: rgba(165, 153, 153, 0.865);
+}
+
+#header-img{
+    left: 0;
+    max-width: 200px;
+    height: 100%;
+}
+
+#get_started{
+    text-align: center;
+}
+
+#email{
+    width: 50%;
+    max-width: 250px;
+    border-radius: 2px;
+    border:  1px solid;
+    padding: 2px;
+}
+
+#email:hover{
+    border-color: #80bdff;
+    box-shadow: 0 0 0 1px #476b93;
+    outline: none;
+}
+
+.submit{
+    color: black;
+    background-color: #f1c40f;
+    border: none;
+    max-width: 150px;
+    width: 25%;
+    height: 20px;
+    margin-top: 0.5rem;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 5px 20px 5px 20px;
+}
+
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+#offre{
+    margin: 3rem;
+}
+
+.offre_detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 1.5rem;
+}
+
+#icon{
+    text-align: center;
+    display: flex;
+    color: darkorange;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#description{
+    margin: 0;
+    padding: 0;
+}
+
+#youtube_video, #price{
+    display: flex;
+    justify-content: center;
+    margin: 0 3em 2em 3em;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 100px;
+    width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.product{
+    border: 1px solid;
+    text-align: center
+}
+
+.product_name{
+    background-color: darkorange;
+    padding: 4px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.product_price{
+    margin: 15px auto 15px auto;
+    font-weight: 700;
+}
+.product > button {
+    border: 0;
+    margin: 15px 15px 15px 15px;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+
+
+
+@media (min-width: 751px){
+    header{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #nav-bar > nav{
+        text-align: right;
+        padding-top: 1rem;
+    }
+    .nav-link{
+        margin: 3rem;
+    }
+}
+@media (min-width: 601px) and (max-width: 750px){
+    header{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #nav-bar > nav{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        display: grid;
+        grid-template-row: auto auto;
+    }
+    #nav-bar > nav{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #header-img{
+        margin: auto;
+    }
+}
